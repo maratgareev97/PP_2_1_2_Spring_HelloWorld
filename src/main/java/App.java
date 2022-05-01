@@ -7,14 +7,14 @@ public class App {
         HelloWorld bean = (HelloWorld) applicationContext.getBean("helloworld");
         HelloWorld ok = (HelloWorld) applicationContext.getBean("helloworld");
         System.out.println(bean.getMessage());
-        System.out.println(bean.equals(ok));
+        System.out.println(bean == ok);
 
         Cat cat = (Cat) applicationContext.getBean("cat");
         Cat cat1 = (Cat) applicationContext.getBean("cat");
 //        System.out.println(cat.equals(cat1));
 //        System.out.println(cat.getMessage());
 //        System.out.println(cat.getMessage());
-        System.out.println(cat.equals(cat1));
+        System.out.println(cat == cat1);
 //        if (bean.equals(cat)){
 //            System.out.println(bean.equals(cat));
 //        }
